@@ -74,7 +74,7 @@ namespace pocketmine {
 
 	const VERSION = "1.2.1";
 	const API_VERSION = "3.0.1";
-	const CODENAME = "RottenApple";
+	const CODENAME = "PluginBOXone";
 
 	/*
 	 * Startup code. Do not look at it, it may harm you.
@@ -90,7 +90,7 @@ namespace pocketmine {
 	}
 
 	if(version_compare("7.0", PHP_VERSION) > 0){
-		echo "[CRITICAL] You must use PHP >= 7.0" . PHP_EOL;
+		echo "[CRITICAL] You must use PHP, please download the PHP7 from the GitHub page from PluginBOXone! >= 7.0" . PHP_EOL;
 		echo "[CRITICAL] Please use the installer provided on the homepage." . PHP_EOL;
 		exit(1);
 	}
@@ -479,9 +479,9 @@ namespace pocketmine {
 
 	//echo "Server has stopped" . Terminal::$FORMAT_RESET . "\n";
 
-	$logger->info(Utils::getThreadCount() . " threads has stopped");//add threads count
+	$logger->info(Utils::getThreadCount() . " stopped threads");//add threads count
 
-	$logger->info("Server has stopped");
+	$logger->info("Server shutdown!");
 
 	exit(0);
 
